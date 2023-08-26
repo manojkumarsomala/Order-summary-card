@@ -1,0 +1,117 @@
+
+:root{
+  ----Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%); 
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 16px ;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: var(----Pale-blue);
+}
+
+
+p{
+    font-size: 14px;
+    color: var(--Desaturated-blue);
+}
+
+
+h3{
+    cursor: pointer;
+}
+.order-summary{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    background-color: white ;
+    max-width: 320px ; 
+    padding:0 1.2rem 1.5rem ;
+    border-radius: 1.3rem;
+
+    box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+}
+
+.order-summary .imgillustare {
+    width: 320px;
+   align-self: center;
+   border-radius: 1.3rem 1.3rem 0 0 ;
+}
+
+
+.order-summary-text{
+    padding: 0 1.5rem ;
+    color: var(--Desaturated-blue);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.subscribtion{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 0.6rem;
+    background-color: var(--Very-pale-blue);
+}
+
+.subscribtion > .flex-group {
+   margin-left: 1.5rem;
+   margin-right: auto;
+}
+
+.btn {
+    background: #3829e0;
+    background-image: -webkit-linear-gradient(top, #3829e0, #3829e0);
+    background-image: -moz-linear-gradient(top, #3829e0, #3829e0);
+    background-image: -ms-linear-gradient(top, #3829e0, #3829e0);
+    background-image: -o-linear-gradient(top, #3829e0, #3829e0);
+    background-image: linear-gradient(to bottom, #3829e0, #3829e0);
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    -webkit-box-shadow: 1px 18px 1px #f5f7ff;
+    -moz-box-shadow: 1px 18px 1px #f5f7ff;
+    box-shadow: 1px 18px 1px #f5f7ff;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #7280a7;
+    text-decoration: none;
+  }
+
+
+  @media (min-width:450px) {
+   
+   
+   body {
+    background: url(pattern-background-desktop.svg), var(----Pale-blue);
+    background-repeat: no-repeat;
+   }
+   
+    
+  } 
